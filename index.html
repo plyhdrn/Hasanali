@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>`HASANINSEVGILISI`</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-weight: 400;
+            text-align: center;
+            width: 100%;
+        }
+
+        .loader-div {
+            z-index: 1001;
+            width: 100%;
+            position: fixed;
+            height: 100vh;
+            align-items: center;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            transition: opacity 0.8s ease;
+        }
+
+        .loader-finish {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .img-full {
+            width: 96%;
+        }
+
+        img {
+            border-radius: 16px;
+        }
+
+        .heart image {
+            clip-path: url(#heart-clip);
+        }
+
+        .defs {
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+
+        .demo {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-div">
+        <div class="loader a__center j__center flex-row">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row" style="    position: fixed;
+                z-index: 100;
+                background-color: white;
+                width: 100%;">
+                    <h1>Maveraünnehir</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5vw;">
+            <div class="col-8">
+                <div class="row">
+                    <img class="img-full" style="width: 96%;margin-left: 2%;" src="https://source.unsplash.com/400x401"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="width: 94%;" src="https://source.unsplash.com/400x402" alt="">
+                    <img class="img-full" style="width: 94%;margin-top: 4%;" src="https://source.unsplash.com/400x403"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 4%;width: 94%;" src="https://source.unsplash.com/400x404"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 2%;width: 94%;" src="https://source.unsplash.com/400x405"
+                        alt="">
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="width: 94%;" src="https://source.unsplash.com/400x406" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="width: 94%; margin-left: 4%;" src="https://source.unsplash.com/400x402"
+                        alt="">
+                    <img class="img-full" style="width: 94%;margin-top: 4%;margin-left: 4%;"
+                        src="https://source.unsplash.com/400x403" alt="">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 2%;" src="https://source.unsplash.com/400x401" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 4%;width: 94%;" src="https://source.unsplash.com/400x404"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 2%;width: 94%;" src="https://source.unsplash.com/400x405"
+                        alt="">
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="width: 94%;" src="https://source.unsplash.com/400x406" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%;margin-bottom: 2%;">
+            <div class="col-8">
+                <div class="row">
+                    <img class="img-full" style="margin-left: 2%;" src="https://source.unsplash.com/400x401" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-full" style="width: 94%;" src="https://source.unsplash.com/400x402" alt="">
+                    <img class="img-full" style="width: 94%;margin-top: 4%;" src="https://source.unsplash.com/400x403"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            const preload = document.querySelector(".loader-div");
+            preload.classList.add("loader-finish");
+        });
+    </script>
+</body>
+
+</html>
